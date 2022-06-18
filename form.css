@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    padding: 100px 280px;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    background: url('design/bg-intro-desktop.png') no-repeat center center/cover;
+    padding: 50px 50px;
+    background-color:  hsl(0, 100%, 74%);
+}
+.word{
+    padding-top: 100px;
+}
+.word h2{
+    font-weight: 700;
+}
+#box{
+    display: flex;
+    justify-items:start;
+    color: white;
+    font-size: 16px;
+}
+.forrm{
+    padding-left: 20px;
+}
+.top{
+    background-color:hsl(248, 32%, 49%);
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 2px 2px black;
+    padding-left: -200px;
+
+}
+.top p{
+    font-size: 13px;
+    padding-left: 25px;
+}
+.bot{
+    padding: 25px;
+    background-color: white;
+    border-radius: 7px;
+    padding-bottom: -190px;
+}
+input{
+    width: 100%;
+    padding: 7px;
+    border: solid 1px rgb(224, 220, 220);
+    border-radius: 3px;
+    font-size: 12px;
+}
+button{
+    width: 100%;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border: none;
+    border-radius: 5px;
+    background-color:  hsl(154, 59%, 51%);
+    color: white;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+@media screen and (max-width:375px) {
+    body{
+        padding: 10px 10px;
+    }
+    #box{
+        display: flex;
+        flex-direction: column;
+    }
+    .container{
+        padding-top: 0px;
+        padding-left: 10px;
+        padding-right: 20px;
+    }
+    .word{
+        padding-top: 60px;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+    .word h2{
+        flex-wrap: wrap;
+    }
+}
